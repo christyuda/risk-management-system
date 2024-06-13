@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setupNavigation();
   showDashboard(); // Default view
 });
-
 function setupNavigation() {
   const links = document.querySelectorAll("#sidebar a");
   links.forEach((link) => {
@@ -16,18 +15,19 @@ function setupNavigation() {
         case "showAddRisk()":
           showAddRisk();
           break;
-        case "showEvents()":
-          showEvents();
-          break;
-        case "showCauses()":
-          showCauses();
-          break;
-        case "showSettings()":
-          showSettings();
-          break;
       }
     });
   });
+}
+
+function showDashboard() {
+  // Implementation similar to previously provided, or updated content
+  document.getElementById("content").innerHTML =
+    "<h1>Dashboard Content Here</h1>";
+}
+
+function showAddRisk() {
+  window.location.href = "add-risk.html";
 }
 
 function showDashboard() {
