@@ -32,7 +32,7 @@ function showAddRisk() {
 
 function showDashboard() {
   const risks = JSON.parse(localStorage.getItem("risks")) || [];
-  let html = `<h1>Dasbor Manajemen Risiko</h1>
+  let html = `<h1>Dashboard Risk Register</h1>
                 <table>
                     <thead>
                         <tr>
